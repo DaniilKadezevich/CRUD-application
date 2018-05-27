@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="col-4 offset-4 ">
+        <form id="form_owner" class="add_owner hidden">
+            <label><h2>Name:</h2><input type="text" name="name" value=""></label>
+            <label><h2>Balance:</h2><input type="number" name="balance" value=""></label>
+            <div class="form_type">
+                <h2>Type:</h2><label><input type="radio" name="type" value="Person" checked>Person</label>
+                <label><input type="radio" name="type" value="Company">Company</label>
+            </div>
+            <div id="btn_save_block" class="save_owner_btn"></div>
+        </form>
+    </div>
+    <div class="col-4 offset-4 ">
+        <form id="form_cars" class="add_car hidden">
+            <label><h2>Mark:</h2><input type="text" name="make" value=""></label>
+            <label><h2>Model:</h2><input type="text" name="model" value=""></label>
+            <label><h2>Colour:</h2><input type="text" name="colour" value=""></label>
+            <label><h2>Year:</h2><input type="number" name="year" value=""></label>
+            <label><h2>Price:</h2><input type="number" name="price" value=""></label>
+            <div id="btn_save_car_block" class="save_car_btn"></div>
+        </form>
+    </div>
+
+   <div class="container">
+       <div class="row">
+           <div class="col-4 offset-2 tac">
+               <input type="button" class="show_table show_owners btn btn-primary" value="Show Owners">
+           </div>
+           <div class="col-4 tac">
+               <input type="button" class="show_table show_cars btn btn-primary" value="Show Cars">
+           </div>
+       </div>
+   </div>
+
+   <div class="container list" id ="owners_table">
+   </div>
+
+   <div class="container list" id="cars_table">
+   </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/Constructor.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/Table.js"></script>
+    <script src="js/Owners_table.js"></script>
+    <script src="js/Cars_table.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+</html>
